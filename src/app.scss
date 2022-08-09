@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 'border-box';
+    font-family: 'Montserrat', sans-serif;
+
+    .app_box {
+        height: 100vh;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &.sunny {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('assets/images/sunny\ day.jfif');
+
+        }
+
+        .search_box {
+            .input_field {
+                border-radius: 0%;
+                background: transparent;
+                border: 0ch;
+            }
+        }
+    }
+}
