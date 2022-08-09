@@ -4,17 +4,20 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: 'border-box';
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 
     .app_box {
         height: 100vh;
-        background-position: top;
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
 
         &.sunny {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('assets/images/sunny\ day.jfif');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('assets/images/sunny\ day.jpg');
+        }
 
+        &.rain {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('assets/images/rainny\ day.jpg');
         }
 
         .search_box {
@@ -23,6 +26,15 @@ body {
                 background: transparent;
                 border: 0ch;
             }
+        }
+
+        .ico_main-div {
+            font-size: 10rem;
+        }
+
+        .temp_value {
+            font-size: 5rem;
+            line-height: normal;
         }
     }
 }
